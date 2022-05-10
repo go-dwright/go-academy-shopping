@@ -157,3 +157,23 @@ func TestPRODUCT_REQ_006(t *testing.T) {
 		t.Fatal("PRODUCT_REQ_006: Once created, I should be able to get a product back by its unique identifier")
 	}
 }
+
+// PRODUCT_REQ_007 Once created, I should be able to update a product's price
+func TestPRODUCT_REQ_007(t *testing.T) {
+
+}
+
+// PRODUCT_REQ_008 Once created, I should be able to update a product's stock amount
+func TestPRODUCT_REQ_008(t *testing.T) {
+
+}
+
+// PRODUCT_REQ_009 Once created, I should be able to put a product on sale, so it's returned price should be a percentage of its full price
+func TestPRODUCT_REQ_009(t *testing.T) {
+
+}
+
+// PRODUCT_REQ_010 I should not be able to create a new product that has a negative stock
+func TestPRODUCT_REQ_010(t *testing.T) {
+
+}
