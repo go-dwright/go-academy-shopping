@@ -24,12 +24,16 @@ func main() {
 	router := gin.Default()
 	router.GET("/test", test)
 	router.GET("/customers/all", GetAllCustomers)
+	router.POST("/customer", createCustomer)
 
 	router.Run("localhost:8080")
 }
 
 func GetAllCustomers(c *gin.Context) {
 	c.IndentedJSON(http.StatusOK, customer.GetAll())
+}
+
+func createCustomer(c *gin.Context) {
 }
 
 func test(c *gin.Context) {
